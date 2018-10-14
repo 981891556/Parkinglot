@@ -24,7 +24,7 @@ public class MainActivity extends SlidingFragmentActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initSlidingMenu();
-        //初始化Fragment
+        //初始化Fragment的方法
         initFragment();
     }
 
