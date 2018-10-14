@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liangjiacheng.parkinglot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+     <activity android:name=".StartActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            作用是去除标题栏全屏显示
+    -->
+    <application
+        android:name=".JAVA.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ui"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <activity
+            android:name=".Activity.StartActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.Login" />
+        <activity android:name=".Activity.person_setting" />
+        <activity android:name=".Activity.my_car_Activity" />
+        <activity android:name=".Activity.my_message" />
+        <activity android:name=".Activity.subject_skin" />
+        <activity android:name=".Activity.feedback_feedback" />
+        <activity android:name=".Activity.nocturnal_pattern" />
+        <activity android:name=".Activity.About_us" />
+        <activity android:name=".Activity.setting_head" />
+        <activity android:name=".Activity.setting_background" />
+        <activity android:name=".Activity.GuideActivtiy"></activity>
+    </application>
+
+</manifest>

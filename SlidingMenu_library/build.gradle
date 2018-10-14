@@ -1,0 +1,38 @@
+//buildscript {
+//    repositories {
+//        mavenCentral()
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:0.4.+'
+//    }
+//}
+apply plugin: 'com.android.library'
+dependencies {
+    implementation 'com.android.support:support-v4:28+'
+    implementation project(':xUtils3_xutils')
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.1"
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 28
+    }
+
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+
+}

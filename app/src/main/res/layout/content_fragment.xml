@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.liangjiacheng.parkinglot.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.example.liangjiacheng.parkinglot.view.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray"
+        android:orientation="horizontal"
+        android:padding="3dp">
+        <!--RadioButton在xml中定义的时候有个checked属性，
+        设置为true就是默认选中了。-->
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/MyBottomBarCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/radio_home_btn"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/buttom_textcolor_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_news_center"
+            style="@style/MyBottomBarCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_home_btn"
+            android:gravity="center"
+            android:text="新闻"
+            android:textColor="@drawable/buttom_textcolor_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_nearby"
+            style="@style/MyBottomBarCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/radio_nearby_btn"
+            android:gravity="center"
+            android:text="附近"
+            android:textColor="@drawable/buttom_textcolor_selector"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_about"
+            style="@style/MyBottomBarCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/radio_about_btn"
+            android:gravity="center"
+            android:text="关于停车场"
+            android:textColor="@drawable/buttom_textcolor_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/MyBottomBarCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/radio_about_us_btn"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/buttom_textcolor_selector"/>
+    </RadioGroup>
+
+</LinearLayout>

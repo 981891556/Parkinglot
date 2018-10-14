@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f2f4f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f4f5"
+        android:orientation="vertical">
+
+        <!--设置背景-->
+        <LinearLayout
+            android:onClick="ll_header_bg"
+            android:id="@+id/ll_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/comhead1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4000"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp">
+
+                <!--头像    android:background="@mipmap/comicon"-->
+                <ImageView
+                    android:onClick="iv_head"
+                    android:id="@+id/iv_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"/>
+
+                <!--设置等级-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingTop="16dp">-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_username"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text=""-->
+                        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="17sp" />-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_level"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginLeft="6dp"-->
+                        <!--android:background="@drawable/shape_bg_level"-->
+                        <!--android:text="Lv.0"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="10sp"-->
+                        <!--android:textStyle="italic|bold" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/ViewLineNav" />
+
+        <!--个人中心-->
+        <LinearLayout
+            android:onClick="personal_center"
+            android:id="@+id/personal_center"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_nav_person"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="个人中心"
+                android:textColor="#464C56"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View style="@style/ViewLineNav" />
+
+        <!--我的爱车-->
+        <LinearLayout
+            android:onClick="my_car"
+            android:id="@+id/my_car"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/car"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="我的爱车"
+                android:textColor="#464C56"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View style="@style/ViewLineNav" />
+
+        <!--我的消息-->
+        <LinearLayout
+            android:onClick="last_information"
+            android:id="@+id/last_information"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_nav_box"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="我的消息"
+                android:textColor="#464C56"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View style="@style/ViewLineNav" />
+
+        <!--主题换肤-->
+        <LinearLayout
+            android:onClick="skin"
+            android:id="@+id/skin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_nav_clothes"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="主题换肤"
+                android:textColor="#464C56"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View style="@style/ViewLineNav" />
+
+        <!--夜间模式-->
+        <LinearLayout
+            android:onClick="night_mode"
+            android:id="@+id/night_mode"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_nav_lamp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="夜间模式"
+                android:textColor="#464C56"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View style="@style/ViewLineNav" />
+
+        <!--意见反馈-->
+        <LinearLayout
+            android:onClick="last_advise"
+            android:id="@+id/last_advise"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_nav_deedback"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="意见反馈"
+                android:textColor="#464C56"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View style="@style/ViewLineNav" />
+
+        <!--关于我们-->
+        <LinearLayout
+            android:onClick="about_us"
+            android:id="@+id/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_nav_about"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="关于我们"
+                android:textColor="#464C56"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View style="@style/ViewLineNav" />
+
+        <View style="@style/ViewLineNav"
+            android:layout_marginBottom="45dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
